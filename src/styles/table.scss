@@ -1,0 +1,177 @@
+.table {
+  width: 100%;
+  border-spacing: 0;
+  thead {
+    th {
+      background-color: #ecf2f9;
+      font-family: "Inter";
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      color: #606d7c;
+      border: none;
+      padding: 12px;
+      text-align: left;
+    }
+  }
+  tbody {
+    td {
+      background-color: #fdfeff;
+      font-family: "Inter";
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: #12181f;
+      border: none;
+      padding: 12px;
+      border-bottom: 1px solid #ecf2f9;
+      .badge {
+        font-family: "IBM Plex Sans", sans-serif;
+        height: 23px;
+        background: #ecf2f9;
+        border-radius: 100px;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px 10px;
+        width: max-content;
+      }
+      .receipt-btn {
+        background: #fdfeff;
+        border: 1px solid #d3dde9;
+        box-shadow: 0px 1px 3px rgba(0, 52, 102, 0.06),
+          0px 1px 2px rgba(0, 52, 102, 0.12);
+        border-radius: 2px;
+        font-family: "Inter";
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 16px;
+        height: 23px;
+        display: flex;
+        align-items: center;
+        .icon {
+          height: 10px;
+          width: 10px;
+          object-fit: contain;
+          margin-right: 7px;
+        }
+      }
+      .progress {
+        background: #0283ff;
+        height: 4px;
+        border-radius: 4px;
+        &-bar {
+          width: 60px;
+          background: #d3dde9;
+          border-radius: 4px;
+          height: 4px;
+          margin-right: 10px;
+        }
+        &-wrapper {
+          display: flex;
+          align-items: center;
+          font-family: "IBM Plex Sans", sans-serif;
+        }
+      }
+    }
+  }
+}
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(24, 30, 37, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.display-none {
+    display: none;
+  }
+  &-main {
+    width: 548px;
+    background: #fdfeff;
+    border: 1px solid #d3dde9;
+    box-shadow: 0px 1px 3px rgba(0, 52, 102, 0.06),
+      0px 1px 2px rgba(0, 52, 102, 0.12);
+    border-radius: 2px;
+  }
+  &-header {
+    padding: 20px 24px;
+    background-color: #fdfeff;
+    box-shadow: 0px 1px 3px rgba(0, 52, 102, 0.06),
+      0px 1px 2px rgba(0, 52, 102, 0.12);
+    h4 {
+      font-family: "IBM Plex Sans", sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 23px;
+      color: #12181f;
+      margin: 0;
+    }
+  }
+  &-body {
+    padding: 20px 24px;
+    .form-control {
+      margin-bottom: 10px;
+    }
+    label {
+      font-family: "IBM Plex Sans", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    input[type="text"] {
+      font-family: "IBM Plex Sans", sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      width: calc(100% - 32px);
+      height: 36px;
+      padding: 0 16px;
+      background: #ecf2f9;
+      border: 1px solid #d3dde9;
+      box-shadow: inset 0px 1px 4px rgba(18, 24, 31, 0.07);
+      border-radius: 2px;
+    }
+  }
+  &-footer {
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .close-btn {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-family: "IBM Plex Sans", sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      height: 25px;
+      background: #fdfeff;
+      border: 1px solid #d3dde9;
+      box-shadow: 0px 1px 3px rgba(0, 52, 102, 0.06),
+        0px 1px 2px rgba(0, 52, 102, 0.12);
+      border-radius: 2px;
+    }
+    .update-btn {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-family: "IBM Plex Sans", sans-serif;
+      color: #fdfeff;
+      font-weight: 600;
+      font-size: 18px;
+      height: 25px;
+      background: #0283ff;
+      border: 1px solid #0283ff;
+      box-shadow: 0px 1px 3px rgba(0, 52, 102, 0.06),
+        0px 1px 2px rgba(0, 52, 102, 0.12);
+      border-radius: 2px;
+      margin-left: 12px;
+    }
+  }
+}
